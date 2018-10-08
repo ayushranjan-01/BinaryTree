@@ -6,8 +6,25 @@ public class StudentInfo {
 	private String lastName;
 	private StudentInfo left;
 	private StudentInfo right;
-	
-    /* Start Getters and Setters */
+
+	public StudentInfo() {
+		this.studentNum = 000000;
+		this.firstName = "";
+		this.lastName = "";
+		this.left = null;
+		this.right = null;
+	}
+
+	public StudentInfo(String firstName, String lastName, int studentNum) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.studentNum = studentNum;
+		this.left = null;
+		this.right = null;
+
+	}
+
+	/* Start Getters and Setters */
 	/* Getters */
 
 	public String getFirstName() {
@@ -52,7 +69,4 @@ public class StudentInfo {
 	}
 	/* End Getters and Setters */
 
-	
-	
-	
 }
