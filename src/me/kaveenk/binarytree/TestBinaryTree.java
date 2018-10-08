@@ -1,7 +1,7 @@
 package me.kaveenk.binarytree;
 
 public class TestBinaryTree {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		StudentInfo test = new StudentInfo("Kaveen", "Kumarasinghe", 5);
 		StudentInfo test5 = new StudentInfo("Kaveen", "Kumarasinghe", 9);
 		StudentInfo test4 = new StudentInfo("Kaveen", "Kumarasinghe", 18);
@@ -14,7 +14,7 @@ public class TestBinaryTree {
 		tree.addToTree(tree.getRoot(), test4);
 		tree.addToTree(tree.getRoot(), test5);
 		tree.addToTree(tree.getRoot(), test6);
-		tree.preorder(tree.getRoot());
+		tree.preorder();
 
 	}
 

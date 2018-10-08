@@ -54,14 +54,15 @@ public class MyBinaryTree {
 
 	public void addToTree(StudentInfo root, StudentInfo addition) {
 
-		if (addition.getStudentNum() < root.getStudentNum() || addition.getStudentNum() == root.getStudentNum()) {
+		if (addition.getStudentNum() <= root.getStudentNum()) {
 			if (root.getLeft() == null) {
 				root.setLeft(addition);
 			} else {
 				addToTree(root.getLeft(), addition);
 			}
 
-		} else {
+		} 
+		if (addition.getStudentNum() > root.getStudentNum()) {
 			if (root.getRight() == null) {
 				root.setRight(addition);
 			} else {
